@@ -1,0 +1,56 @@
+[
+  {
+    "_id": "b4b751f6-6d99-43fd-ba34-2cd34b006db5",
+    "colId": "af6883a1-1f41-4129-b15d-be159eda203c",
+    "containerId": "",
+    "name": "GetAllTasks",
+    "url": "http://localhost:3000/tasks",
+    "method": "GET",
+    "sortNum": 10000,
+    "created": "2022-07-13T14:20:22.364Z",
+    "modified": "2022-07-13T14:21:11.236Z",
+    "headers": [],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "0ac88e44-c3a3-455c-87dd-089ceca74abf",
+    "colId": "af6883a1-1f41-4129-b15d-be159eda203c",
+    "containerId": "",
+    "name": "CreateTask",
+    "url": "http://localhost:3000/tasks",
+    "method": "POST",
+    "sortNum": 20000,
+    "created": "2022-07-13T14:20:52.404Z",
+    "modified": "2022-07-13T14:23:09.553Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n    \"title\": \"Se former\",\n    \"Description\": \"Se former en codant de superbe appli\"\n}",
+      "form": []
+    },
+    "tests": [
+      {
+        "type": "set-env-var",
+        "custom": "json.id",
+        "action": "setto",
+        "value": "{{taskId}}"
+      }
+    ]
+  },
+  {
+    "_id": "aad3bae1-5d38-4751-898b-97f9d843d883",
+    "colId": "af6883a1-1f41-4129-b15d-be159eda203c",
+    "containerId": "",
+    "name": "GetTaskById",
+    "url": "http://localhost:3000/tasks/{{taskId}}",
+    "method": "GET",
+    "sortNum": 15000,
+    "created": "2022-07-13T14:21:46.874Z",
+    "modified": "2022-07-13T14:23:14.674Z",
+    "headers": [],
+    "params": [],
+    "tests": []
+  }
+]
