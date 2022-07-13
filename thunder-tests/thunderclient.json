@@ -52,5 +52,19 @@
     "headers": [],
     "params": [],
     "tests": []
+  },
+  {
+    "_id": "7875ec16-0034-408f-8018-50dffb39841b",
+    "colId": "af6883a1-1f41-4129-b15d-be159eda203c",
+    "containerId": "",
+    "name": "DeleteTask",
+    "url": "http://localhost:3000/tasks/{{taskId}}",
+    "method": "DELETE",
+    "sortNum": 30000,
+    "created": "2022-07-13T14:33:45.069Z",
+    "modified": "2022-07-13T14:34:30.166Z",
+    "headers": [],
+    "params": [],
+    "tests": []
   }
 ]
