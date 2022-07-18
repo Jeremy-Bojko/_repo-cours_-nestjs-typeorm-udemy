@@ -76,7 +76,7 @@
     "method": "PATCH",
     "sortNum": 40000,
     "created": "2022-07-13T14:42:56.125Z",
-    "modified": "2022-07-13T15:08:34.810Z",
+    "modified": "2022-07-18T14:10:57.884Z",
     "headers": [],
     "params": [],
     "body": {
@@ -91,16 +91,16 @@
     "colId": "af6883a1-1f41-4129-b15d-be159eda203c",
     "containerId": "",
     "name": "GetTaskFiltered",
-    "url": "http://localhost:3000/tasks?status=OPEN&search=appli",
+    "url": "http://localhost:3000/tasks?status=E&search=appli",
     "method": "GET",
     "sortNum": 17500,
     "created": "2022-07-18T10:49:01.971Z",
-    "modified": "2022-07-18T12:35:23.597Z",
+    "modified": "2022-07-18T14:15:39.229Z",
     "headers": [],
     "params": [
       {
         "name": "status",
-        "value": "OPEN",
+        "value": "E",
         "isPath": false
       },
       {
