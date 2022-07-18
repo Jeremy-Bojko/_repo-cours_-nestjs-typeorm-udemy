@@ -22,7 +22,7 @@
     "method": "POST",
     "sortNum": 20000,
     "created": "2022-07-13T14:20:52.404Z",
-    "modified": "2022-07-13T15:11:15.582Z",
+    "modified": "2022-07-18T12:34:57.034Z",
     "headers": [],
     "params": [],
     "body": {
@@ -48,7 +48,7 @@
     "method": "GET",
     "sortNum": 15000,
     "created": "2022-07-13T14:21:46.874Z",
-    "modified": "2022-07-13T14:23:14.674Z",
+    "modified": "2022-07-18T12:39:09.634Z",
     "headers": [],
     "params": [],
     "tests": []
@@ -91,16 +91,16 @@
     "colId": "af6883a1-1f41-4129-b15d-be159eda203c",
     "containerId": "",
     "name": "GetTaskFiltered",
-    "url": "http://localhost:3000/tasks?status=IN_PROGRESS&search=appli",
+    "url": "http://localhost:3000/tasks?status=OPEN&search=appli",
     "method": "GET",
     "sortNum": 17500,
     "created": "2022-07-18T10:49:01.971Z",
-    "modified": "2022-07-18T10:50:09.492Z",
+    "modified": "2022-07-18T12:35:23.597Z",
     "headers": [],
     "params": [
       {
         "name": "status",
-        "value": "IN_PROGRESS",
+        "value": "OPEN",
         "isPath": false
       },
       {
