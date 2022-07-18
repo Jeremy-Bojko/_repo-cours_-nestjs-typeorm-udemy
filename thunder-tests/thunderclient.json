@@ -85,5 +85,30 @@
       "form": []
     },
     "tests": []
+  },
+  {
+    "_id": "17418115-b7f4-4298-83c3-201bd21569b8",
+    "colId": "af6883a1-1f41-4129-b15d-be159eda203c",
+    "containerId": "",
+    "name": "GetTaskFiltered",
+    "url": "http://localhost:3000/tasks?status=IN_PROGRESS&search=appli",
+    "method": "GET",
+    "sortNum": 17500,
+    "created": "2022-07-18T10:49:01.971Z",
+    "modified": "2022-07-18T10:50:09.492Z",
+    "headers": [],
+    "params": [
+      {
+        "name": "status",
+        "value": "IN_PROGRESS",
+        "isPath": false
+      },
+      {
+        "name": "search",
+        "value": "appli",
+        "isPath": false
+      }
+    ],
+    "tests": []
   }
 ]
