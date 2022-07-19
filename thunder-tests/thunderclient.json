@@ -22,12 +22,12 @@
     "method": "POST",
     "sortNum": 20000,
     "created": "2022-07-13T14:20:52.404Z",
-    "modified": "2022-07-18T12:34:57.034Z",
+    "modified": "2022-07-19T15:24:46.394Z",
     "headers": [],
     "params": [],
     "body": {
       "type": "json",
-      "raw": "{\n    \"title\": \"Se former\",\n    \"description\": \"Se former en codant de superbe appli\"\n}",
+      "raw": "{\n    \"title\": \"Sortir\",\n    \"description\": \"Pour prendre l'air et rester concentré\"\n}",
       "form": []
     },
     "tests": [
