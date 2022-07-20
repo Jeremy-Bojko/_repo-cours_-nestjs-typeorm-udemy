@@ -56,11 +56,28 @@ export class TasksService {
     return this.taskRepository.createTask(createTaskDto);
   }
 
-  // deleteTask(id: string): string {
-  //   const found = this.getTaskById(id);
-  //   this.tasks = this.tasks.filter((task) => task.id !== found.id);
-  //   return `Task with id ${id} deleted successfully`;
-  // }
+  /**
+   * this solution is better as
+   * only one API call is made
+   * (compare to remove() method)
+   */
+  async deleteTask(id: string): Promise<string> {
+    const result = await this.taskRepository.delete(id);
+
+    if (result.affected === 0) {
+      throw new NotFoundException(`Task with id ${id} not found`);
+    }
+
+    return `Task with id ${id} deleted successfully`;
+  }
+
+  async removeTask(id: string): Promise<Task> {
+    const found = await this.getTaskById(id);
+
+    const removedTask = await this.taskRepository.remove(found);
+
+    return removedTask;
+  }
   // updateTaskStatus(id: string, status: TaskStatus): Task {
   //   // let taskIndex = -1;
   //   // const taskToUpdate: Task = this.tasks.find((task, index) => {
