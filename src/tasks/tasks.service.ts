@@ -78,21 +78,12 @@ export class TasksService {
 
     return removedTask;
   }
-  // updateTaskStatus(id: string, status: TaskStatus): Task {
-  //   // let taskIndex = -1;
-  //   // const taskToUpdate: Task = this.tasks.find((task, index) => {
-  //   //   if (task.id === id) {
-  //   //     taskIndex = index;
-  //   //     return task;
-  //   //   }
-  //   // });
-  //   // const updatedTask: Task = {
-  //   //   ...taskToUpdate,
-  //   //   status,
-  //   // };
-  //   // this.tasks.splice(taskIndex, 1, updatedTask);
-  //   const task = this.getTaskById(id);
-  //   task.status = status;
-  //   return task;
-  // }
+  async updateTaskStatus(id: string, status: TaskStatus): Promise<Task> {
+    const task = await this.getTaskById(id);
+    task.status = status;
+
+    await this.taskRepository.save(task);
+
+    return task;
+  }
 }
