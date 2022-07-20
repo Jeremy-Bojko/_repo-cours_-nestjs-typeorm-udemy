@@ -110,5 +110,31 @@
       }
     ],
     "tests": []
+  },
+  {
+    "_id": "e6fbadfb-3003-4cbc-a918-aa465b34b824",
+    "colId": "af6883a1-1f41-4129-b15d-be159eda203c",
+    "containerId": "",
+    "name": "Register user",
+    "url": "http://localhost:3000/auth/register",
+    "method": "POST",
+    "sortNum": 50000,
+    "created": "2022-07-20T15:27:24.199Z",
+    "modified": "2022-07-20T15:28:21.552Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n    \"username\": \"Coco\",\n    \"password\": \"Coco2000\"\n}",
+      "form": []
+    },
+    "tests": [
+      {
+        "type": "set-env-var",
+        "custom": "json.id",
+        "action": "setto",
+        "value": "{{taskId}}"
+      }
+    ]
   }
 ]
