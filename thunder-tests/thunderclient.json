@@ -22,12 +22,12 @@
     "method": "POST",
     "sortNum": 20000,
     "created": "2022-07-13T14:20:52.404Z",
-    "modified": "2022-07-19T15:24:46.394Z",
+    "modified": "2022-07-20T12:47:15.377Z",
     "headers": [],
     "params": [],
     "body": {
       "type": "json",
-      "raw": "{\n    \"title\": \"Sortir\",\n    \"description\": \"Pour prendre l'air et rester concentré\"\n}",
+      "raw": "{\n    \"title\": \"Se former\",\n    \"description\": \"Se former an codant de super appli\"\n}",
       "form": []
     },
     "tests": [
@@ -91,21 +91,21 @@
     "colId": "af6883a1-1f41-4129-b15d-be159eda203c",
     "containerId": "",
     "name": "GetTaskFiltered",
-    "url": "http://localhost:3000/tasks?status=E&search=appli",
+    "url": "http://localhost:3000/tasks?status=OPEN&search=app",
     "method": "GET",
     "sortNum": 17500,
     "created": "2022-07-18T10:49:01.971Z",
-    "modified": "2022-07-18T14:15:39.229Z",
+    "modified": "2022-07-20T14:21:30.527Z",
     "headers": [],
     "params": [
       {
         "name": "status",
-        "value": "E",
+        "value": "OPEN",
         "isPath": false
       },
       {
         "name": "search",
-        "value": "appli",
+        "value": "app",
         "isPath": false
       }
     ],
