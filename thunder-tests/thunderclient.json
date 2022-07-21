@@ -146,20 +146,20 @@
     "method": "POST",
     "sortNum": 60000,
     "created": "2022-07-21T14:33:35.174Z",
-    "modified": "2022-07-21T14:33:52.415Z",
+    "modified": "2022-07-21T15:19:36.393Z",
     "headers": [],
     "params": [],
     "body": {
       "type": "json",
-      "raw": "{\n    \"username\": \"Coco21\",\n    \"password\": \"Coco2000\"\n}",
+      "raw": "{\n    \"username\": \"Coco2\",\n    \"password\": \"Coco2000\"\n}",
       "form": []
     },
     "tests": [
       {
         "type": "set-env-var",
-        "custom": "json.id",
+        "custom": "json.accessToken",
         "action": "setto",
-        "value": "{{taskId}}"
+        "value": "{{accessToken}}"
       }
     ]
   }
