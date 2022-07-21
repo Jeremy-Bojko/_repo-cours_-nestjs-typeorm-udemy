@@ -136,5 +136,31 @@
         "value": "{{taskId}}"
       }
     ]
+  },
+  {
+    "_id": "7e01003b-3710-4e15-bfbc-9c7c44b60d15",
+    "colId": "af6883a1-1f41-4129-b15d-be159eda203c",
+    "containerId": "",
+    "name": "Login user",
+    "url": "http://localhost:3000/auth/login",
+    "method": "POST",
+    "sortNum": 60000,
+    "created": "2022-07-21T14:33:35.174Z",
+    "modified": "2022-07-21T14:33:52.415Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n    \"username\": \"Coco21\",\n    \"password\": \"Coco2000\"\n}",
+      "form": []
+    },
+    "tests": [
+      {
+        "type": "set-env-var",
+        "custom": "json.id",
+        "action": "setto",
+        "value": "{{taskId}}"
+      }
+    ]
   }
 ]
