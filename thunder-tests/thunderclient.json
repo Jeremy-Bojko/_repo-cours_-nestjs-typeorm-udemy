@@ -8,9 +8,13 @@
     "method": "GET",
     "sortNum": 10000,
     "created": "2022-07-13T14:20:22.364Z",
-    "modified": "2022-07-13T14:21:11.236Z",
+    "modified": "2022-07-21T15:50:29.838Z",
     "headers": [],
     "params": [],
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{accessToken}}"
+    },
     "tests": []
   },
   {
@@ -22,13 +26,17 @@
     "method": "POST",
     "sortNum": 20000,
     "created": "2022-07-13T14:20:52.404Z",
-    "modified": "2022-07-20T12:47:15.377Z",
+    "modified": "2022-07-22T09:34:53.218Z",
     "headers": [],
     "params": [],
     "body": {
       "type": "json",
-      "raw": "{\n    \"title\": \"Se former\",\n    \"description\": \"Se former an codant de super appli\"\n}",
+      "raw": "{\n    \"title\": \"Nouvelle tache privée\",\n    \"description\": \"C'est privé\"\n}",
       "form": []
+    },
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{accessToken}}"
     },
     "tests": [
       {
@@ -48,9 +56,13 @@
     "method": "GET",
     "sortNum": 15000,
     "created": "2022-07-13T14:21:46.874Z",
-    "modified": "2022-07-19T15:06:17.604Z",
+    "modified": "2022-07-21T16:08:22.029Z",
     "headers": [],
     "params": [],
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{accessToken}}"
+    },
     "tests": []
   },
   {
@@ -62,9 +74,13 @@
     "method": "DELETE",
     "sortNum": 30000,
     "created": "2022-07-13T14:33:45.069Z",
-    "modified": "2022-07-13T14:34:30.166Z",
+    "modified": "2022-07-21T16:08:28.977Z",
     "headers": [],
     "params": [],
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{accessToken}}"
+    },
     "tests": []
   },
   {
@@ -76,13 +92,17 @@
     "method": "PATCH",
     "sortNum": 40000,
     "created": "2022-07-13T14:42:56.125Z",
-    "modified": "2022-07-18T14:10:57.884Z",
+    "modified": "2022-07-21T16:08:34.509Z",
     "headers": [],
     "params": [],
     "body": {
       "type": "json",
       "raw": "{\n    \"status\": \"IN_PROGRESS\"\n}",
       "form": []
+    },
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{accessToken}}"
     },
     "tests": []
   },
@@ -95,7 +115,7 @@
     "method": "GET",
     "sortNum": 17500,
     "created": "2022-07-18T10:49:01.971Z",
-    "modified": "2022-07-20T14:21:30.527Z",
+    "modified": "2022-07-21T16:08:17.058Z",
     "headers": [],
     "params": [
       {
@@ -109,6 +129,10 @@
         "isPath": false
       }
     ],
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{accessToken}}"
+    },
     "tests": []
   },
   {
@@ -120,7 +144,7 @@
     "method": "POST",
     "sortNum": 50000,
     "created": "2022-07-20T15:27:24.199Z",
-    "modified": "2022-07-20T15:46:15.448Z",
+    "modified": "2022-07-22T09:34:32.242Z",
     "headers": [],
     "params": [],
     "body": {
@@ -128,14 +152,7 @@
       "raw": "{\n    \"username\": \"Coco2\",\n    \"password\": \"Coco2000\"\n}",
       "form": []
     },
-    "tests": [
-      {
-        "type": "set-env-var",
-        "custom": "json.id",
-        "action": "setto",
-        "value": "{{taskId}}"
-      }
-    ]
+    "tests": []
   },
   {
     "_id": "7e01003b-3710-4e15-bfbc-9c7c44b60d15",
@@ -146,12 +163,12 @@
     "method": "POST",
     "sortNum": 60000,
     "created": "2022-07-21T14:33:35.174Z",
-    "modified": "2022-07-21T15:19:36.393Z",
+    "modified": "2022-07-22T09:35:01.942Z",
     "headers": [],
     "params": [],
     "body": {
       "type": "json",
-      "raw": "{\n    \"username\": \"Coco2\",\n    \"password\": \"Coco2000\"\n}",
+      "raw": "{\n    \"username\": \"Coco\",\n    \"password\": \"Coco2000\"\n}",
       "form": []
     },
     "tests": [
