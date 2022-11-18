@@ -6,7 +6,7 @@ import { TaskStatus } from './task-status.enum';
 import { Task } from './task.entity';
 import { InternalServerErrorException, Logger } from '@nestjs/common';
 
-@EntityRepository(Task)
+// @EntityRepository(Task)
 export class TasksRepository extends Repository<Task> {
   private logger = new Logger('TasksRepository', { timestamp: true });
 
