@@ -3,6 +3,11 @@ import { INestApplication } from '@nestjs/common';
 import * as request from 'supertest';
 import { AppModule } from './../src/app.module';
 
+/**
+ * To know more about e2e testing, visit:
+ * https://github.dev/jmcdo29/testing-nestjs
+ */
+
 describe('AppController (e2e)', () => {
   let app: INestApplication;
 
